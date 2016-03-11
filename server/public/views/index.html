@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Management Server Application</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css" />
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="vendors/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn-primary btn-block btn-lg generate">Generate Project</button>
+        <div class="jumbotron">
+          <h4 class="company-name"></h4>
+          <h2 class="project-name"></h2>
+          <button class="btn-success assign">Assign Staff</button>
+
+
+          <div class="row">
+            <div class="col-sm-4">
+              <h3>Front End</h3>
+              <p class="employee-name"></p>
+              <p><!--<span class="fe-pts-filled"></span>/-->
+                <span class="fe-pts-needed"></span></p>
+            </div>
+
+            <div class="col-sm-4">
+              <h3>Client</h3>
+              <p class="employee-name"></p>
+              <p><!--<span class="cs-pts-filled"></span>/-->
+                <span class="cs-pts-needed"></span></p>
+            </div>
+
+            <div class="col-sm-4">
+              <h3>Server</h3>
+              <p class="employee-name"></p>
+              <p><!--<span class="ss-pts-filled"></span>/-->
+                <span class="ss-pts-needed"></span></p>
+            </div>
+          </div>
+          <h3 class="text-center">Time Estimate: <span class="time-estimate"></span></h3>
+        </div>
+
+        <h4 class="staff-list"></h4>
+
+        <button class="hidden add-employee">Add Employee</button>
+    </div>
+</body>
+</html>
